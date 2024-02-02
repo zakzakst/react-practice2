@@ -13,7 +13,7 @@ root.render(
 );
 
 /**
- * Chapter 2
+ * Chapter 2-2
  */
 
 // setInterval(() => {
@@ -30,7 +30,7 @@ root.render(
 
 
 /**
- * Chapter 3
+ * Chapter 2-3
  */
 
 // root.render(
@@ -76,6 +76,22 @@ root.render(
 //     <li>{0}</li>
 //     <li>{String(true)}</li>
 //   </ul>
+// )
+
+// const dest = 'https://ja.react.dev'
+// root.render(
+//   // <a href={dest}>React本家サイト</a>
+//   <a href={dest + '/docs'}>React本家サイト</a>
+// )
+
+// const attrs = {
+//   href: 'https://wings.msn.to/',
+//   download: false,
+//   target: '_blank',
+//   rel: 'help',
+// }
+// root.render(
+//   <a {...attrs}>サポートページへ</a>
 // )
 
 
