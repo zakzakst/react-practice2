@@ -3,7 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AppClass from './AppClass';
+
+// Chapter 2
+// import AppClass from './AppClass';
+
+// Chapter 3
+import MyHello from './chap03/MyHello'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +17,7 @@ root.render(
   </React.StrictMode>
 );
 
+// #region ■■chap02■■
 /**
  * Chapter 2-2
  */
@@ -127,7 +133,20 @@ root.render(
 //     '絶賛発売中！'
 //   )
 // )
+// #endregion
 
+// #region ■■chap03■■
+/**
+ * Chapter 3-1
+ */
+// root.render(
+//   <>
+//     <MyHello myName='鈴木' />
+//     <MyHello myName={3} />
+//     <MyHello />
+//   </>
+// )
+// #endregion
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
