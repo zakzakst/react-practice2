@@ -8,7 +8,8 @@ import reportWebVitals from './reportWebVitals';
 // import AppClass from './AppClass';
 
 // Chapter 3
-import MyHello from './chap03/MyHello'
+// import MyHello from './chap03/MyHello'
+// import EventBasic from './chap03/EventBasic'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -145,6 +146,10 @@ root.render(
 //     <MyHello myName={3} />
 //     <MyHello />
 //   </>
+// )
+
+// root.render(
+//   <EventBasic type='time' />
 // )
 // #endregion
 
