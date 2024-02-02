@@ -94,6 +94,18 @@ root.render(
 //   <a {...attrs}>サポートページへ</a>
 // )
 
+// const props = 'color: White; background-color: Blue; padding: 3px'
+// const props = {
+//   color: 'white',
+//   backgroundColor: 'blue',
+//   padding: 3,
+// }
+// root.render(
+//   <>
+//     <p style={props}>WINGSプロジェクト</p>
+//     <p className='hoge'>WINGSプロジェクト</p>
+//   </>
+// )
 
 
 // If you want to start measuring performance in your app, pass a function
