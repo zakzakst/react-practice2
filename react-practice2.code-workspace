@@ -1,8 +1,8 @@
 {
   "folders": [
     {
-      "path": "./my-react"
-      // "path": "./"
+      // "path": "./my-react"
+      "path": "./"
     }
   ],
   "settings": {
