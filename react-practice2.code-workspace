@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      // "path": "./my-react"
+      "path": "./"
+    }
+  ],
+  "settings": {
+    "emmet.includeLanguages": {
+      "nunjucks": "html"
+    },
+    "liveServer.settings.port": 5501,
+    "editor.formatOnSave": false
+  }
+}
