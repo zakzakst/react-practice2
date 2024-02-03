@@ -10,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 // Chapter 3
 // import MyHello from './chap03/MyHello'
 // import EventBasic from './chap03/EventBasic'
+import StateBasic from './chap03/StateBasic'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -151,6 +152,10 @@ root.render(
 // root.render(
 //   <EventBasic type='time' />
 // )
+
+root.render(
+  <StateBasic init={0} />
+)
 // #endregion
 
 // If you want to start measuring performance in your app, pass a function
