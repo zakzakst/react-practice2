@@ -1,14 +1,13 @@
 import React from 'react'
 
-// 書籍情報はProps（src）経由で受け取る
-export default function ForList({ src }) {
+export default function ForFilter({src}) {
+  const lowPrice = src.filter((el) => el.price < 3500)
+
   return (
-    // 書籍情報（src属性）を<dt>/<dd>リストに整形
     <dl>
       {
-        src.map((el, index) => (
-          // <React.Fragment key={el.isbn}>
-          <React.Fragment key={index}>
+        lowPrice.map((el) => (
+          <React.Fragment key={el.isbn}>
             <dt>
               <a href={`https://wings.msn.to/books/${el.isbn}/${el.isbn}.jpg`}>
                 {el.title}（{el.price}）円
