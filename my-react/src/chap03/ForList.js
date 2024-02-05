@@ -6,8 +6,9 @@ export default function ForList({ src }) {
     // 書籍情報（src属性）を<dt>/<dd>リストに整形
     <dl>
       {
-        src.map((el) => (
-          <>
+        src.map((el, index) => (
+          // <React.Fragment key={el.isbn}>
+          <React.Fragment key={index}>
             <dt>
               <a href={`https://wings.msn.to/books/${el.isbn}/${el.isbn}.jpg`}>
                 {el.title}（{el.price}）円
