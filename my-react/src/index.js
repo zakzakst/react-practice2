@@ -19,7 +19,8 @@ import books from './chap03/books'
 // import SelectStyle from './chap03/SelectStyle'
 // import StyledPanel from './chap03/StyledPanel'
 // import TitledPanel from './chap03/TitledPanel'
-import ListTemplate from './chap03/ListTemplate'
+// import ListTemplate from './chap03/ListTemplate'
+import TypeProp, { Member } from './chap03/TypeProp'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -238,17 +239,58 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   </ListTemplate>
 // )
 
+// root.render(
+//   <ListTemplate src={books} render={(el) => (
+//     <>
+//       <dt>
+//         <a href={`https://wings.msn.to/books/${el.isbn}/${el.isbn}.jpg`}>
+//           {el.title}（{el.price}円）
+//         </a>
+//       </dt>
+//       <dd>{el.summary}</dd>
+//     </>
+//   )} />
+// )
+
+// // （1）PropTypes.instanceOf
+// root.render(
+//   <TypeProp prop1={new Member()} />
+//   // <TypeProp prop1='hoge' />
+// )
+
+// // （2）PropTypes.oneOf
+// root.render(
+//   <TypeProp prop2='男性' />
+//   // <TypeProp prop2='hoge' />
+// )
+
+// // （3）PropTypes.oneOfType
+// root.render(
+//   <TypeProp prop3='鈴木花子' />
+//   // <TypeProp prop3={new Member()} />
+// )
+
+// // （4）PropTypes.arrayOf
+// root.render(
+//   <TypeProp prop4={[15, 30]} />
+//   // <TypeProp prop4={[30, '鈴木花子']} />
+// )
+
+// // （5）ProtoTypes.objectOf
+// root.render(
+//   <TypeProp prop5={{ '鈴木花子': 15, '佐藤雫': 30 }} />
+//   // <TypeProp prop5={{ '鈴木花子': 15, '佐藤雫': '三十' }} />
+// )
+
+// // （6）PropTypes.shape
+// root.render(
+//   <TypeProp prop6={{ name: '鈴木花子', age: 35, sex: '女性', blood: 'A' }} />
+//   // <TypeProp prop6={{ age: 35, sex: '女性' }} />
+// )
+
+// （7）PropTypes.exact
 root.render(
-  <ListTemplate src={books} render={(el) => (
-    <>
-      <dt>
-        <a href={`https://wings.msn.to/books/${el.isbn}/${el.isbn}.jpg`}>
-          {el.title}（{el.price}円）
-        </a>
-      </dt>
-      <dd>{el.summary}</dd>
-    </>
-  )} />
+  <TypeProp prop7={{ name: '鈴木花子', age: 35, sex: '女性', blood: 'A' }} />
 )
 
 // #endregion
