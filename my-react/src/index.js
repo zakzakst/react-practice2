@@ -17,7 +17,8 @@ import MyHello from './chap03/MyHello'
 // import ForFilter from './chap03/ForFilter'
 // import ForSort from './chap03/ForSort'
 // import SelectStyle from './chap03/SelectStyle'
-import StyledPanel from './chap03/StyledPanel'
+// import StyledPanel from './chap03/StyledPanel'
+import TitledPanel from './chap03/TitledPanel'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -185,12 +186,40 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   // <SelectStyle mode='dark' />
 // )
 
+// root.render(
+//   <StyledPanel>
+//     <p>メンバー募集中！</p>
+//     <p>ようこそ、WINGSプロジェクトへ！！</p>
+//     <MyHello myName='鈴木' />
+//   </StyledPanel>
+// )
+
+// root.render(
+//   <TitledPanel
+//     title={
+//       <p>メンバー募集中！</p>
+//     }
+//     body={
+//       <p>ようこそ、WINGSプロジェクトへ！！</p>
+//       // <MyHello myName='鈴木' />
+//     }
+//   />
+// )
+
+// const title = <p>メンバー募集中！</p>
+// const body = <p>ようこそ、WINGSプロジェクトへ！！</p>
+// root.render(
+//   <TitledPanel
+//     title={title}
+//     body={body}
+//   />
+// )
+
 root.render(
-  <StyledPanel>
-    <p>メンバー募集中！</p>
-    <p>ようこそ、WINGSプロジェクトへ！！</p>
-    <MyHello myName='鈴木' />
-  </StyledPanel>
+  <TitledPanel>
+    <p key='title'>メンバー募集中！</p>
+    <p key='body'>ようこそ、WINGSプロジェクトへ！！</p>
+  </TitledPanel>
 )
 
 // #endregion
