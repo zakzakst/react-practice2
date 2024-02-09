@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 // import AppClass from './AppClass';
 
 // Chapter 3
-// import MyHello from './chap03/MyHello'
+import MyHello from './chap03/MyHello'
 // import EventBasic from './chap03/EventBasic'
 // import StateBasic from './chap03/StateBasic'
 // import books from './chap03/books'
@@ -16,7 +16,8 @@ import reportWebVitals from './reportWebVitals';
 // import ForNest from './chap03/ForNest'
 // import ForFilter from './chap03/ForFilter'
 // import ForSort from './chap03/ForSort'
-import SelectStyle from './chap03/SelectStyle'
+// import SelectStyle from './chap03/SelectStyle'
+import StyledPanel from './chap03/StyledPanel'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -179,9 +180,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <ForSort src={books} />
 // )
 
+// root.render(
+//   <SelectStyle mode='light' />
+//   // <SelectStyle mode='dark' />
+// )
+
 root.render(
-  <SelectStyle mode='light' />
-  // <SelectStyle mode='dark' />
+  <StyledPanel>
+    <p>メンバー募集中！</p>
+    <p>ようこそ、WINGSプロジェクトへ！！</p>
+    <MyHello myName='鈴木' />
+  </StyledPanel>
 )
 
 // #endregion
