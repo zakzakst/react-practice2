@@ -11,11 +11,12 @@ import reportWebVitals from './reportWebVitals';
 // import MyHello from './chap03/MyHello'
 // import EventBasic from './chap03/EventBasic'
 // import StateBasic from './chap03/StateBasic'
-import books from './chap03/books'
+// import books from './chap03/books'
 // import ForList from './chap03/ForList'
 // import ForNest from './chap03/ForNest'
 // import ForFilter from './chap03/ForFilter'
-import ForSort from './chap03/ForSort'
+// import ForSort from './chap03/ForSort'
+import SelectStyle from './chap03/SelectStyle'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -174,8 +175,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <ForFilter src={books} />
 // )
 
+// root.render(
+//   <ForSort src={books} />
+// )
+
 root.render(
-  <ForSort src={books} />
+  <SelectStyle mode='light' />
+  // <SelectStyle mode='dark' />
 )
 
 // #endregion
