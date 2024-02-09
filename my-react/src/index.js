@@ -8,17 +8,18 @@ import reportWebVitals from './reportWebVitals';
 // import AppClass from './AppClass';
 
 // Chapter 3
-import MyHello from './chap03/MyHello'
+import books from './chap03/books'
+// import MyHello from './chap03/MyHello'
 // import EventBasic from './chap03/EventBasic'
 // import StateBasic from './chap03/StateBasic'
-// import books from './chap03/books'
 // import ForList from './chap03/ForList'
 // import ForNest from './chap03/ForNest'
 // import ForFilter from './chap03/ForFilter'
 // import ForSort from './chap03/ForSort'
 // import SelectStyle from './chap03/SelectStyle'
 // import StyledPanel from './chap03/StyledPanel'
-import TitledPanel from './chap03/TitledPanel'
+// import TitledPanel from './chap03/TitledPanel'
+import ListTemplate from './chap03/ListTemplate'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -215,11 +216,39 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   />
 // )
 
+// root.render(
+//   <TitledPanel>
+//     <p key='title'>メンバー募集中！</p>
+//     <p key='body'>ようこそ、WINGSプロジェクトへ！！</p>
+//   </TitledPanel>
+// )
+
+// root.render(
+//   <ListTemplate src={books}>
+//     {(el) => (
+//       <>
+//         <dt>
+//           <a href={`https://wings.msn.to/books/${el.isbn}/${el.isbn}.jpg`}>
+//             {el.title}（{el.price}円）
+//           </a>
+//         </dt>
+//         <dd>{el.summary}</dd>
+//       </>
+//     )}
+//   </ListTemplate>
+// )
+
 root.render(
-  <TitledPanel>
-    <p key='title'>メンバー募集中！</p>
-    <p key='body'>ようこそ、WINGSプロジェクトへ！！</p>
-  </TitledPanel>
+  <ListTemplate src={books} render={(el) => (
+    <>
+      <dt>
+        <a href={`https://wings.msn.to/books/${el.isbn}/${el.isbn}.jpg`}>
+          {el.title}（{el.price}円）
+        </a>
+      </dt>
+      <dd>{el.summary}</dd>
+    </>
+  )} />
 )
 
 // #endregion
