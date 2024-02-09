@@ -8,15 +8,19 @@ import reportWebVitals from './reportWebVitals';
 // import AppClass from './AppClass';
 
 // Chapter 3
+import books from './chap03/books'
 // import MyHello from './chap03/MyHello'
 // import EventBasic from './chap03/EventBasic'
 // import StateBasic from './chap03/StateBasic'
-// import books from './chap03/books'
 // import ForList from './chap03/ForList'
 // import ForNest from './chap03/ForNest'
 // import ForFilter from './chap03/ForFilter'
 // import ForSort from './chap03/ForSort'
-import SelectStyle from './chap03/SelectStyle'
+// import SelectStyle from './chap03/SelectStyle'
+// import StyledPanel from './chap03/StyledPanel'
+// import TitledPanel from './chap03/TitledPanel'
+// import ListTemplate from './chap03/ListTemplate'
+import TypeProp, { Member } from './chap03/TypeProp'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -179,9 +183,114 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <ForSort src={books} />
 // )
 
+// root.render(
+//   <SelectStyle mode='light' />
+//   // <SelectStyle mode='dark' />
+// )
+
+// root.render(
+//   <StyledPanel>
+//     <p>メンバー募集中！</p>
+//     <p>ようこそ、WINGSプロジェクトへ！！</p>
+//     <MyHello myName='鈴木' />
+//   </StyledPanel>
+// )
+
+// root.render(
+//   <TitledPanel
+//     title={
+//       <p>メンバー募集中！</p>
+//     }
+//     body={
+//       <p>ようこそ、WINGSプロジェクトへ！！</p>
+//       // <MyHello myName='鈴木' />
+//     }
+//   />
+// )
+
+// const title = <p>メンバー募集中！</p>
+// const body = <p>ようこそ、WINGSプロジェクトへ！！</p>
+// root.render(
+//   <TitledPanel
+//     title={title}
+//     body={body}
+//   />
+// )
+
+// root.render(
+//   <TitledPanel>
+//     <p key='title'>メンバー募集中！</p>
+//     <p key='body'>ようこそ、WINGSプロジェクトへ！！</p>
+//   </TitledPanel>
+// )
+
+// root.render(
+//   <ListTemplate src={books}>
+//     {(el) => (
+//       <>
+//         <dt>
+//           <a href={`https://wings.msn.to/books/${el.isbn}/${el.isbn}.jpg`}>
+//             {el.title}（{el.price}円）
+//           </a>
+//         </dt>
+//         <dd>{el.summary}</dd>
+//       </>
+//     )}
+//   </ListTemplate>
+// )
+
+// root.render(
+//   <ListTemplate src={books} render={(el) => (
+//     <>
+//       <dt>
+//         <a href={`https://wings.msn.to/books/${el.isbn}/${el.isbn}.jpg`}>
+//           {el.title}（{el.price}円）
+//         </a>
+//       </dt>
+//       <dd>{el.summary}</dd>
+//     </>
+//   )} />
+// )
+
+// // （1）PropTypes.instanceOf
+// root.render(
+//   <TypeProp prop1={new Member()} />
+//   // <TypeProp prop1='hoge' />
+// )
+
+// // （2）PropTypes.oneOf
+// root.render(
+//   <TypeProp prop2='男性' />
+//   // <TypeProp prop2='hoge' />
+// )
+
+// // （3）PropTypes.oneOfType
+// root.render(
+//   <TypeProp prop3='鈴木花子' />
+//   // <TypeProp prop3={new Member()} />
+// )
+
+// // （4）PropTypes.arrayOf
+// root.render(
+//   <TypeProp prop4={[15, 30]} />
+//   // <TypeProp prop4={[30, '鈴木花子']} />
+// )
+
+// // （5）ProtoTypes.objectOf
+// root.render(
+//   <TypeProp prop5={{ '鈴木花子': 15, '佐藤雫': 30 }} />
+//   // <TypeProp prop5={{ '鈴木花子': 15, '佐藤雫': '三十' }} />
+// )
+
+// // （6）PropTypes.shape
+// root.render(
+//   <TypeProp prop6={{ name: '鈴木花子', age: 35, sex: '女性', blood: 'A' }} />
+//   // <TypeProp prop6={{ age: 35, sex: '女性' }} />
+// )
+
+// （7）PropTypes.exact
 root.render(
-  <SelectStyle mode='light' />
-  // <SelectStyle mode='dark' />
+  <TypeProp prop7={{ name: '鈴木花子', age: 35, sex: '女性', blood: 'A' }} />
 )
 
 // #endregion
