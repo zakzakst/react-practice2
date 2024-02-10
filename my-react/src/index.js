@@ -20,7 +20,8 @@ import books from './chap03/books'
 // import StyledPanel from './chap03/StyledPanel'
 // import TitledPanel from './chap03/TitledPanel'
 // import ListTemplate from './chap03/ListTemplate'
-import TypeProp, { Member } from './chap03/TypeProp'
+// import TypeProp, { Member } from './chap03/TypeProp'
+import StateParent from './chap03/StateParent'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -289,8 +290,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // （7）PropTypes.exact
+// root.render(
+//   <TypeProp prop7={{ name: '鈴木花子', age: 35, sex: '女性', blood: 'A' }} />
+// )
+
 root.render(
-  <TypeProp prop7={{ name: '鈴木花子', age: 35, sex: '女性', blood: 'A' }} />
+  <StateParent />
 )
 
 // #endregion
