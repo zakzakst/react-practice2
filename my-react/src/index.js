@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 // import AppClass from './AppClass';
 
 // Chapter 3
-import books from './chap03/books'
+// import books from './chap03/books'
 // import MyHello from './chap03/MyHello'
 // import EventBasic from './chap03/EventBasic'
 // import StateBasic from './chap03/StateBasic'
@@ -21,7 +21,20 @@ import books from './chap03/books'
 // import TitledPanel from './chap03/TitledPanel'
 // import ListTemplate from './chap03/ListTemplate'
 // import TypeProp, { Member } from './chap03/TypeProp'
-import StateParent from './chap03/StateParent'
+// import StateParent from './chap03/StateParent'
+
+// Chapter 4
+// import EventMouse from './chap03/EventMouse'
+// import EventCompare from './chap03/EventCompare'
+// import EventError from './chap03/EventError'
+// import EventObj from './chap03/EventObj'
+// import EventPoint from './chap03/EventPoint'
+// import EventKey from './chap03/EventKey'
+// import EventArgs from './chap03/EventArgs'
+// import EventArgs2 from './chap03/EventArgs2'
+// import EventPropagation from './chap03/EventPropagation'
+// import EventOnce from './chap03/EventOnce'
+import EventPassive from './chap03/EventPassive'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -294,8 +307,63 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <TypeProp prop7={{ name: '鈴木花子', age: 35, sex: '女性', blood: 'A' }} />
 // )
 
+// root.render(
+//   <StateParent />
+// )
+
+// #endregion
+
+// #region ■■chap04■■
+// root.render(
+//   <EventMouse
+//     alt='ロゴ画像'
+//     beforeSrc='https://www.web-deli.com/image/linkbanner_l.gif'
+//     afterSrc='https://www.web-deli.com/image/home_chara.gif'
+//   />
+// )
+
+// root.render(
+//   <EventCompare />
+// )
+
+// root.render(
+//   <EventError
+//     src='./image/wings.jpg'
+//     // src='./image/_wings.jpg'
+//     alt='サンプル画像'
+//   />
+// )
+
+// root.render(
+//   <EventObj />
+// )
+
+// root.render(
+//   <EventPoint />
+// )
+
+// root.render(
+//   <EventKey />
+// )
+
+// root.render(
+//   <EventArgs />
+// )
+
+// root.render(
+//   <EventArgs2 />
+// )
+
+// root.render(
+//   <EventPropagation />
+// )
+
+// root.render(
+//   <EventOnce />
+// )
+
 root.render(
-  <StateParent />
+  <EventPassive />
 )
 
 // #endregion
