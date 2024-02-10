@@ -4,6 +4,9 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
+// 4-1
+import StateForm from './chap04/StateForm'
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
@@ -12,6 +15,9 @@ root.render(
 )
 
 // #region ■■ 4-1 ■■
+root.render(
+  <StateForm />
+)
 // #endregion
 
 reportWebVitals();
