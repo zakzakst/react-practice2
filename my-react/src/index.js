@@ -31,7 +31,8 @@ import reportWebVitals from './reportWebVitals';
 // import EventPoint from './chap03/EventPoint'
 // import EventKey from './chap03/EventKey'
 // import EventArgs from './chap03/EventArgs'
-import EventArgs2 from './chap03/EventArgs2'
+// import EventArgs2 from './chap03/EventArgs2'
+import EventPropagation from './chap03/EventPropagation'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -347,8 +348,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <EventArgs />
 // )
 
+// root.render(
+//   <EventArgs2 />
+// )
+
 root.render(
-  <EventArgs2 />
+  <EventPropagation />
 )
 
 // #endregion
