@@ -26,7 +26,12 @@ import reportWebVitals from './reportWebVitals';
 // Chapter 4
 // import EventMouse from './chap03/EventMouse'
 // import EventCompare from './chap03/EventCompare'
-import EventError from './chap03/EventError'
+// import EventError from './chap03/EventError'
+// import EventObj from './chap03/EventObj'
+// import EventPoint from './chap03/EventPoint'
+// import EventKey from './chap03/EventKey'
+// import EventArgs from './chap03/EventArgs'
+import EventArgs2 from './chap03/EventArgs2'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -318,12 +323,32 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <EventCompare />
 // )
 
+// root.render(
+//   <EventError
+//     src='./image/wings.jpg'
+//     // src='./image/_wings.jpg'
+//     alt='サンプル画像'
+//   />
+// )
+
+// root.render(
+//   <EventObj />
+// )
+
+// root.render(
+//   <EventPoint />
+// )
+
+// root.render(
+//   <EventKey />
+// )
+
+// root.render(
+//   <EventArgs />
+// )
+
 root.render(
-  <EventError
-    src='./image/wings.jpg'
-    // src='./image/_wings.jpg'
-    alt='サンプル画像'
-  />
+  <EventArgs2 />
 )
 
 // #endregion
