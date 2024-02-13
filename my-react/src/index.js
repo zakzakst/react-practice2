@@ -9,7 +9,11 @@ import reportWebVitals from './reportWebVitals'
 // import StateFormUC from './chap04/StateFormUC'
 // import FormTextarea from './chap04/FormTextarea'
 // import FormSelect from './chap04/FormSelect'
-import FormList from './chap04/FormList'
+// import FormList from './chap04/FormList'
+// import FormRadio from './chap04/FormRadio'
+// import FormCheck from './chap04/FormCheck'
+// import FormCheckMulti from './chap04/FormCheckMulti'
+import FormFile from './chap04/FormFile'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -35,9 +39,26 @@ root.render(
 //   <FormSelect />
 // )
 
+// root.render(
+//   <FormList />
+// )
+
+// root.render(
+//   <FormRadio />
+// )
+
+// root.render(
+//   <FormCheck />
+// )
+
+// root.render(
+//   <FormCheckMulti />
+// )
+
 root.render(
-  <FormList />
+  <FormFile />
 )
+
 // #endregion
 
 reportWebVitals();
