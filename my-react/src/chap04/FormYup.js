@@ -1,59 +1,82 @@
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import * as yup from 'yup'
+// import * as yup from 'yup'
+import yup from './yup.jp.js'
 
-yup.addMethod(yup.string, 'ng', function() {
-  return this.test(
-    'ng',
-    ({ label }) => `${label}にNGワードが含まれています`,
-    (value) => {
-      const ngs = ['暴力', '死', 'グロ']
-      for (const ng of ngs) {
-        if (value.includes(ng)) {
-          return false
-        }
-      }
-      return true
-    }
-  )
-})
+// yup.addMethod(yup.string, 'ng', function() {
+//   return this.test(
+//     'ng',
+//     ({ label }) => `${label}にNGワードが含まれています`,
+//     (value) => {
+//       const ngs = ['暴力', '死', 'グロ']
+//       for (const ng of ngs) {
+//         if (value.includes(ng)) {
+//           return false
+//         }
+//       }
+//       return true
+//     }
+//   )
+// })
+
+// const schema = yup.object({
+//   name: yup
+//     .string()
+//     .label('名前')
+//     .trim().lowercase()
+//     .transform((value, orgValue) => value.normalize('NFKC'))
+//     .required('${label}は必須入力です。')
+//     .max(20, '${label}は${max}文字以内で入力してください。'),
+//   gender: yup
+//     .string()
+//     .label('性別')
+//     .required('${label}は必須入力です。'),
+//   email: yup
+//     .string()
+//     .label('メールアドレス')
+//     .required('${label}は必須入力です。')
+//     .email('${label}の形式が不正です。'),
+//   memo: yup
+//     .string()
+//     .label('備考')
+//     .required('${label}は必須入力です。')
+//     .min(10, '${label}は${min}文字以上で入力してください。')
+//     // .test(
+//     //   'ng',
+//     //   ({ label }) => `${label}にNGワードが含まれています`,
+//     //   (value) => {
+//     //     const ngs = ['暴力', '死', 'グロ']
+//     //     for (const ng of ngs) {
+//     //       if (value.includes(ng)) {
+//     //         return false
+//     //       }
+//     //     }
+//     //     return true
+//     //   }
+//     // ),
+//     .ng(),
+// })
 
 const schema = yup.object({
   name: yup
     .string()
     .label('名前')
-    .trim().lowercase()
-    .transform((value, orgValue) => value.normalize('NFKC'))
-    .required('${label}は必須入力です。')
-    .max(20, '${label}は${max}文字以内で入力してください。'),
+    .required()
+    .max(20),
   gender: yup
     .string()
     .label('性別')
-    .required('${label}は必須入力です。'),
+    .required(),
   email: yup
     .string()
     .label('メールアドレス')
-    .required('${label}は必須入力です。')
-    .email('${label}の形式が不正です。'),
+    .required()
+    .email(),
   memo: yup
     .string()
     .label('備考')
-    .required('${label}は必須入力です。')
-    .min(10, '${label}は${min}文字以上で入力してください。')
-    // .test(
-    //   'ng',
-    //   ({ label }) => `${label}にNGワードが含まれています`,
-    //   (value) => {
-    //     const ngs = ['暴力', '死', 'グロ']
-    //     for (const ng of ngs) {
-    //       if (value.includes(ng)) {
-    //         return false
-    //       }
-    //     }
-    //     return true
-    //   }
-    // ),
-    .ng(),
+    .required()
+    .min(10),
 })
 
 export default function FormYup() {
