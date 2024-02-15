@@ -4,22 +4,8 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-// 4-1
-// import StateForm from './chap04/StateForm'
-// import StateFormUC from './chap04/StateFormUC'
-// import FormTextarea from './chap04/FormTextarea'
-// import FormSelect from './chap04/FormSelect'
-// import FormList from './chap04/FormList'
-// import FormRadio from './chap04/FormRadio'
-// import FormCheck from './chap04/FormCheck'
-// import FormCheckMulti from './chap04/FormCheckMulti'
-// import FormFile from './chap04/FormFile'
-// import StateNest from './chap04/StateNest'
-// import StateNestImmer from './chap04/StateNestImmer'
-// import StateNestImmer2 from './chap04/StateNestImmer2'
-// import StateTodo from './chap04/StateTodo'
-// import FormBasic from './chap04/FormBasic'
-import FormYup from './chap04/FormYup'
+// import LazyBasic from './chap05/LazyBasic'
+import LazyMulti from './chap05/LazyMulti'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -28,65 +14,14 @@ root.render(
   </React.StrictMode>
 )
 
-// #region ■■ 4-1 ■■
-// root.render(
-//   <StateForm />
-// )
+// #region ■■ 5-1 ■■
 
 // root.render(
-//   <StateFormUC />
-// )
-
-// root.render(
-//   <FormTextarea />
-// )
-
-// root.render(
-//   <FormSelect />
-// )
-
-// root.render(
-//   <FormList />
-// )
-
-// root.render(
-//   <FormRadio />
-// )
-
-// root.render(
-//   <FormCheck />
-// )
-
-// root.render(
-//   <FormCheckMulti />
-// )
-
-// root.render(
-//   <FormFile />
-// )
-
-// root.render(
-//   <StateNest />
-// )
-
-// root.render(
-//   <StateNestImmer />
-// )
-
-// root.render(
-//   <StateNestImmer2 />
-// )
-
-// root.render(
-//   <StateTodo />
-// )
-
-// root.render(
-//   <FormBasic />
+//   <LazyBasic />
 // )
 
 root.render(
-  <FormYup />
+  <LazyMulti />
 )
 
 // #endregion
