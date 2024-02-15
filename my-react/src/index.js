@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals'
 // import LazyBasic from './chap05/LazyBasic'
 // import LazyMulti from './chap05/LazyMulti'
 // import SuspenseSimple from './chap05/SuspenseSimple'
-import SuspenseResult from './chap05/SuspenseResult'
+// import SuspenseResult from './chap05/SuspenseResult'
+import ProfilerBasic from './chap05/ProfilerBasic'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -30,8 +31,12 @@ root.render(
 //   <SuspenseSimple />
 // )
 
+// root.render(
+//   <SuspenseResult />
+// )
+
 root.render(
-  <SuspenseResult />
+  <ProfilerBasic />
 )
 
 // #endregion
