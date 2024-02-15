@@ -22,7 +22,15 @@ export default function FormBasic() {
     defaultValues,
   })
 
-  const onsubmit = (data) => console.log(data)
+  // const onsubmit = (data) => console.log(data)
+  const onsubmit = (data) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve()
+        console.log(data)
+      }, 4000)
+    })
+  }
 
   const onerror = (err) => console.log(err)
 
@@ -117,7 +125,12 @@ export default function FormBasic() {
       </div>
 
       <div>
-        <button type='submit'>送信</button>
+        {/* <button type='submit'>送信</button> */}
+        <button
+          type='submit'
+          disabled={!isDirty || !isValid || isSubmitting}
+        >送信</button>
+        {isSubmitting && <div>...送信中...</div>}
       </div>
     </form>
   )
