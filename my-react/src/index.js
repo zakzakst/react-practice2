@@ -14,10 +14,11 @@ import reportWebVitals from './reportWebVitals'
 // import StyledCommon from './chap05/StyledCommon'
 // import StyledGlobal from './chap05/StyledGlobal'
 // import StyledProps from './chap05/StyledProps'
-import EmotionJsx from './chap05/EmotionJsx'
+// import EmotionJsx from './chap05/EmotionJsx'
 // import EmotionComp from './chap05/EmotionComp'
 /** @jsxImportSource @emotion/react */
-import { css, Global } from '@emotion/react'
+// import { css, Global } from '@emotion/react'
+import PortalBasic from './chap05/PortalBasic'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -82,16 +83,23 @@ root.render(
 //   <EmotionComp />
 // )
 
-const global = css`
-  body {
-    background-color: Yellow;
-  }
-`
+// const global = css`
+//   body {
+//     background-color: Yellow;
+//   }
+// `
+
+// root.render(
+//   <>
+//     <Global styles={global} />
+//     <EmotionJsx />
+//   </>
+// )
 
 root.render(
   <>
-    <Global styles={global} />
-    <EmotionJsx />
+    <div id='dialog'></div>
+    <PortalBasic />
   </>
 )
 
