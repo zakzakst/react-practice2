@@ -8,7 +8,12 @@ import reportWebVitals from './reportWebVitals'
 // import LazyMulti from './chap05/LazyMulti'
 // import SuspenseSimple from './chap05/SuspenseSimple'
 // import SuspenseResult from './chap05/SuspenseResult'
-import ProfilerBasic from './chap05/ProfilerBasic'
+// import ProfilerBasic from './chap05/ProfilerBasic'
+// import StyledComp from './chap05/StyledComp'
+// import { MyButton, MyStyledButton } from './chap05/StyledComp2'
+// import StyledCommon from './chap05/StyledCommon'
+// import StyledGlobal from './chap05/StyledGlobal'
+import StyledProps from './chap05/StyledProps'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -35,8 +40,34 @@ root.render(
 //   <SuspenseResult />
 // )
 
+// root.render(
+//   <ProfilerBasic />
+// )
+
+// root.render(
+//   <StyledComp />
+// )
+
+// root.render(
+//   <>
+//     <MyButton>ボタン</MyButton>
+//     <MyStyledButton>ボタン</MyStyledButton>
+//   </>
+// )
+
+// root.render(
+//   <StyledCommon />
+// )
+
+// root.render(
+//   <>
+//     <StyledGlobal />
+//     <StyledComp />
+//   </>
+// )
+
 root.render(
-  <ProfilerBasic />
+  <StyledProps />
 )
 
 // #endregion
