@@ -18,7 +18,10 @@ import reportWebVitals from './reportWebVitals'
 // import EmotionComp from './chap05/EmotionComp'
 /** @jsxImportSource @emotion/react */
 // import { css, Global } from '@emotion/react'
-import PortalBasic from './chap05/PortalBasic'
+// import PortalBasic from './chap05/PortalBasic'
+// import ErrorRoot from './chap05/ErrorRoot'
+// import ErrorRetryRoot from './chap05/ErrorRetryRoot'
+import ErrorEventRoot from './chap05/ErrorEventRoot'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -96,13 +99,24 @@ root.render(
 //   </>
 // )
 
-root.render(
-  <>
-    <div id='dialog'></div>
-    <PortalBasic />
-  </>
-)
+// root.render(
+//   <>
+//     <div id='dialog'></div>
+//     <PortalBasic />
+//   </>
+// )
 
+// root.render(
+//   <ErrorRoot />
+// )
+
+// root.render(
+//   <ErrorRetryRoot />
+// )
+
+root.render(
+  <ErrorEventRoot />
+)
 // #endregion
 
 reportWebVitals();
