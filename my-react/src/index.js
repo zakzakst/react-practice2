@@ -13,7 +13,11 @@ import reportWebVitals from './reportWebVitals'
 // import { MyButton, MyStyledButton } from './chap05/StyledComp2'
 // import StyledCommon from './chap05/StyledCommon'
 // import StyledGlobal from './chap05/StyledGlobal'
-import StyledProps from './chap05/StyledProps'
+// import StyledProps from './chap05/StyledProps'
+import EmotionJsx from './chap05/EmotionJsx'
+// import EmotionComp from './chap05/EmotionComp'
+/** @jsxImportSource @emotion/react */
+import { css, Global } from '@emotion/react'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -66,8 +70,29 @@ root.render(
 //   </>
 // )
 
+// root.render(
+//   <StyledProps />
+// )
+
+// root.render(
+//   <EmotionJsx />
+// )
+
+// root.render(
+//   <EmotionComp />
+// )
+
+const global = css`
+  body {
+    background-color: Yellow;
+  }
+`
+
 root.render(
-  <StyledProps />
+  <>
+    <Global styles={global} />
+    <EmotionJsx />
+  </>
 )
 
 // #endregion
