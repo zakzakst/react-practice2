@@ -5,7 +5,8 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 // import MaterialBasic from './chap06/MaterialBasic'
-import MaterialDrawer from './chap06/MaterialDrawer'
+// import MaterialDrawer from './chap06/MaterialDrawer'
+import MaterialGrid from './chap06/MaterialGrid'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -20,8 +21,12 @@ root.render(
 //   <MaterialBasic />
 // )
 
+// root.render(
+//   <MaterialDrawer />
+// )
+
 root.render(
-  <MaterialDrawer />
+  <MaterialGrid />
 )
 
 // #endregion
