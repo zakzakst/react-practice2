@@ -8,6 +8,7 @@
     "@hookform/resolvers": "^3.3.4",
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
+    "@storybook/jest": "^0.2.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -60,6 +61,7 @@
     "@storybook/react": "^7.6.16",
     "@storybook/react-webpack5": "^7.6.16",
     "@storybook/test": "^7.6.16",
+    "@storybook/testing-library": "^0.2.2",
     "eslint-plugin-storybook": "^0.8.0",
     "storybook": "^7.6.16",
     "webpack": "^5.90.2"

@@ -1,4 +1,6 @@
 import { action } from '@storybook/addon-actions'
+import { userEvent, within } from '@storybook/testing-library'
+import { expect } from '@storybook/jest'
 import MyButton from './MyButton'
 
 export default {
@@ -39,11 +41,11 @@ export default {
       type: 'string',
       description: 'ボタンのキャプション',
     },
-    onClick: {
-      type: 'function',
-      description: 'clickハンドラー',
-    },
-    handleClick: { action: 'clicked' },
+    // onClick: {
+    //   type: 'function',
+    //   description: 'clickハンドラー',
+    // },
+    // handleClick: { action: 'clicked' },
   },
 }
 
@@ -72,9 +74,16 @@ export const Index = {
     size: 'medium',
     label: 'ボタン',
     // onClick: () => console.log('Hello, Storybook!!'),
-    handleClick: (e) => {
-      action('clicked')(e, new Date());
-    },
+    // handleClick: (e) => {
+    //   action('clicked')(e, new Date());
+    // },
+  },
+  play: async ({ args, canvasElement }) => {
+    const canvas = within(canvasElement)
+    const button = canvas.getByRole('button')
+    userEvent.click(button)
+    userEvent.click(button)
+    expect(args.onClick).toHaveBeenCalledTimes(2)
   },
 }
 
@@ -83,7 +92,7 @@ export const White = {
     size: 'small',
     // label: 'ボタン',
     backgroundColor: '#fff',
-    handleClick: action('clicked'),
+    // handleClick: action('clicked'),
   },
 }
 

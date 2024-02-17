@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import '../stories/button.css'
 
 export default function MyButton({
@@ -6,7 +6,7 @@ export default function MyButton({
   backgroundColor = null,
   size = 'medium',
   label = 'Button',
-  handleClick,
+  // handleClick,
   ...props
 }){
   const mode = primary
