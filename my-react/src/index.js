@@ -4,7 +4,8 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-import MaterialBasic from './chap06/MaterialBasic'
+// import MaterialBasic from './chap06/MaterialBasic'
+import MaterialDrawer from './chap06/MaterialDrawer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -15,8 +16,12 @@ root.render(
 
 // #region ■■ 6-1 ■■
 
+// root.render(
+//   <MaterialBasic />
+// )
+
 root.render(
-  <MaterialBasic />
+  <MaterialDrawer />
 )
 
 // #endregion
