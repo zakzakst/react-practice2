@@ -47,6 +47,9 @@ export default {
     // },
     // handleClick: { action: 'clicked' },
   },
+  // tags: [
+  //   'autodocs',
+  // ],
 }
 
 // export const Index = {
