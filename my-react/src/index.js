@@ -11,7 +11,9 @@ import reportWebVitals from './reportWebVitals'
 // import theme from './chap06/theme'
 // import MaterialMode from './chap06/MaterialMode'
 // import FormMui from './chap06/FormMui'
-import QueryPre from './chap06/QueryPre'
+// import QueryPre from './chap06/QueryPre'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import QueryBasic from './chap06/QueryBasic'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -49,8 +51,15 @@ root.render(
 //   <FormMui />
 // )
 
+// root.render(
+//   <QueryPre />
+// )
+
+const cli = new QueryClient()
 root.render(
-  <QueryPre />
+  <QueryClientProvider client={cli}>
+    <QueryBasic />
+  </QueryClientProvider>
 )
 
 // #endregion
