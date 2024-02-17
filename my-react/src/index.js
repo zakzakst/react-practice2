@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals'
 // import StateEffect from './chap07/StateEffect'
 // import HookTimer from './chap07/HookTimer'
 // import HookEffect from './chap07/HookEffect'
-import HookRef from './chap07/HookRef'
+// import HookRef from './chap07/HookRef'
+import HookRefForward from './chap07/HookRefForward'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -30,8 +31,12 @@ root.render(
 //   <HookEffect init={10} />
 // )
 
+// root.render(
+//   <HookRef />
+// )
+
 root.render(
-  <HookRef />
+  <HookRefForward />
 )
 
 // #endregion
