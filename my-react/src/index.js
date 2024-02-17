@@ -9,7 +9,8 @@ import reportWebVitals from './reportWebVitals'
 // import MaterialGrid from './chap06/MaterialGrid'
 // import { CssBaseline, ThemeProvider } from '@mui/material'
 // import theme from './chap06/theme'
-import MaterialMode from './chap06/MaterialMode'
+// import MaterialMode from './chap06/MaterialMode'
+import FormMui from './chap06/FormMui'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -39,8 +40,12 @@ root.render(
 //   </ThemeProvider>
 // )
 
+// root.render(
+//   <MaterialMode />
+// )
+
 root.render(
-  <MaterialMode />
+  <FormMui />
 )
 
 // #endregion
