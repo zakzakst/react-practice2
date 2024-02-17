@@ -6,6 +6,7 @@ export default function MyButton({
   backgroundColor = null,
   size = 'medium',
   label = 'Button',
+  handleClick,
   ...props
 }){
   const mode = primary
@@ -21,6 +22,7 @@ export default function MyButton({
         mode,
       ].join(' ')}
       style={backgroundColor && { backgroundColor }}
+      // onClick={handleClick}
       {...props}
     >
       {label}
@@ -29,13 +31,14 @@ export default function MyButton({
 }
 
 // MyButton.protoTypes = {
-//   primary: PropTypes.bool,
-//   backgroundColor: PropTypes.string,
-//   size: PropTypes.oneOf([
-//     'small',
-//     'medium',
-//     'large',
-//   ]),
-//   label: PropTypes.string.isRequired,
-//   onClick: PropTypes.func,
+//   // primary: PropTypes.bool,
+//   // backgroundColor: PropTypes.string,
+//   // size: PropTypes.oneOf([
+//   //   'small',
+//   //   'medium',
+//   //   'large',
+//   // ]),
+//   // label: PropTypes.string.isRequired,
+//   // onClick: PropTypes.func,
+//   handleClick: PropTypes.func,
 // }

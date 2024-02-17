@@ -1,3 +1,4 @@
+import { action } from '@storybook/addon-actions'
 import MyButton from './MyButton'
 
 export default {
@@ -42,6 +43,7 @@ export default {
       type: 'function',
       description: 'clickハンドラー',
     },
+    handleClick: { action: 'clicked' },
   },
 }
 
@@ -69,7 +71,10 @@ export const Index = {
     primary: true,
     size: 'medium',
     label: 'ボタン',
-    onClick: () => console.log('Hello, Storybook!!'),
+    // onClick: () => console.log('Hello, Storybook!!'),
+    handleClick: (e) => {
+      action('clicked')(e, new Date());
+    },
   },
 }
 
@@ -78,6 +83,7 @@ export const White = {
     size: 'small',
     // label: 'ボタン',
     backgroundColor: '#fff',
+    handleClick: action('clicked'),
   },
 }
 
