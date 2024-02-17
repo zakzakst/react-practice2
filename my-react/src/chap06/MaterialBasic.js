@@ -11,6 +11,7 @@ export default function MaterialBasic() {
       <Button variant='text' css={font}>Text</Button>
       <Button variant='contained'>Contained</Button>
       <Button variant='outlined'>Outlined</Button>
+      <Button>Default</Button>
     </>
   )
 }

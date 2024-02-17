@@ -4,9 +4,11 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-// import MaterialBasic from './chap06/MaterialBasic'
+import MaterialBasic from './chap06/MaterialBasic'
 // import MaterialDrawer from './chap06/MaterialDrawer'
-import MaterialGrid from './chap06/MaterialGrid'
+// import MaterialGrid from './chap06/MaterialGrid'
+import { CssBaseline, ThemeProvider } from '@mui/material'
+import theme from './chap06/theme'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -25,8 +27,15 @@ root.render(
 //   <MaterialDrawer />
 // )
 
+// root.render(
+//   <MaterialGrid />
+// )
+
 root.render(
-  <MaterialGrid />
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
+    <MaterialBasic />
+  </ThemeProvider>
 )
 
 // #endregion
