@@ -4,7 +4,9 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-import StateEffect from './chap07/StateEffect'
+// import StateEffect from './chap07/StateEffect'
+// import HookTimer from './chap07/HookTimer'
+import HookEffect from './chap07/HookEffect'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -15,8 +17,16 @@ root.render(
 
 // #region ■■ 7-1 ■■
 
+// root.render(
+//   <StateEffect init={0} />
+// )
+
+// root.render(
+//   <HookTimer init={10} />
+// )
+
 root.render(
-  <StateEffect init={0} />
+  <HookEffect init={10} />
 )
 
 // #endregion
