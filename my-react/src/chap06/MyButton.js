@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import '../stories/button.css'
 
 export default function MyButton({
@@ -26,3 +27,15 @@ export default function MyButton({
     </button>
   )
 }
+
+// MyButton.protoTypes = {
+//   primary: PropTypes.bool,
+//   backgroundColor: PropTypes.string,
+//   size: PropTypes.oneOf([
+//     'small',
+//     'medium',
+//     'large',
+//   ]),
+//   label: PropTypes.string.isRequired,
+//   onClick: PropTypes.func,
+// }
