@@ -4,24 +4,13 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-// import LazyBasic from './chap05/LazyBasic'
-// import LazyMulti from './chap05/LazyMulti'
-// import SuspenseSimple from './chap05/SuspenseSimple'
-// import SuspenseResult from './chap05/SuspenseResult'
-// import ProfilerBasic from './chap05/ProfilerBasic'
-// import StyledComp from './chap05/StyledComp'
-// import { MyButton, MyStyledButton } from './chap05/StyledComp2'
-// import StyledCommon from './chap05/StyledCommon'
-// import StyledGlobal from './chap05/StyledGlobal'
-// import StyledProps from './chap05/StyledProps'
-// import EmotionJsx from './chap05/EmotionJsx'
-// import EmotionComp from './chap05/EmotionComp'
-/** @jsxImportSource @emotion/react */
-// import { css, Global } from '@emotion/react'
-// import PortalBasic from './chap05/PortalBasic'
-// import ErrorRoot from './chap05/ErrorRoot'
-// import ErrorRetryRoot from './chap05/ErrorRetryRoot'
-import ErrorEventRoot from './chap05/ErrorEventRoot'
+// import MaterialBasic from './chap06/MaterialBasic'
+// import MaterialDrawer from './chap06/MaterialDrawer'
+// import MaterialGrid from './chap06/MaterialGrid'
+// import { CssBaseline, ThemeProvider } from '@mui/material'
+// import theme from './chap06/theme'
+// import MaterialMode from './chap06/MaterialMode'
+import FormMui from './chap06/FormMui'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -30,93 +19,35 @@ root.render(
   </React.StrictMode>
 )
 
-// #region ■■ 5-1 ■■
+// #region ■■ 6-1 ■■
 
 // root.render(
-//   <LazyBasic />
+//   <MaterialBasic />
 // )
 
 // root.render(
-//   <LazyMulti />
+//   <MaterialDrawer />
 // )
 
 // root.render(
-//   <SuspenseSimple />
+//   <MaterialGrid />
 // )
 
 // root.render(
-//   <SuspenseResult />
+//   <ThemeProvider theme={theme}>
+//     <CssBaseline />
+//     <MaterialBasic />
+//   </ThemeProvider>
 // )
 
 // root.render(
-//   <ProfilerBasic />
-// )
-
-// root.render(
-//   <StyledComp />
-// )
-
-// root.render(
-//   <>
-//     <MyButton>ボタン</MyButton>
-//     <MyStyledButton>ボタン</MyStyledButton>
-//   </>
-// )
-
-// root.render(
-//   <StyledCommon />
-// )
-
-// root.render(
-//   <>
-//     <StyledGlobal />
-//     <StyledComp />
-//   </>
-// )
-
-// root.render(
-//   <StyledProps />
-// )
-
-// root.render(
-//   <EmotionJsx />
-// )
-
-// root.render(
-//   <EmotionComp />
-// )
-
-// const global = css`
-//   body {
-//     background-color: Yellow;
-//   }
-// `
-
-// root.render(
-//   <>
-//     <Global styles={global} />
-//     <EmotionJsx />
-//   </>
-// )
-
-// root.render(
-//   <>
-//     <div id='dialog'></div>
-//     <PortalBasic />
-//   </>
-// )
-
-// root.render(
-//   <ErrorRoot />
-// )
-
-// root.render(
-//   <ErrorRetryRoot />
+//   <MaterialMode />
 // )
 
 root.render(
-  <ErrorEventRoot />
+  <FormMui />
 )
+
 // #endregion
 
 reportWebVitals();
