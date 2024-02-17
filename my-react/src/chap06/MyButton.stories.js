@@ -85,6 +85,31 @@ export const Index = {
     userEvent.click(button)
     expect(args.onClick).toHaveBeenCalledTimes(2)
   },
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: 'ghostwhite', value: '#f8f8ff' },
+        { name: 'aquamarine', value: '#7fffd4' },
+        { name: 'coral', value: '#ff7f50' },
+      ],
+    },
+    layout: 'centered',
+  },
+  // decorators: [
+  //   (Story) => (
+  //     <div
+  //       style={{
+  //         height: 150,
+  //         display: 'flex',
+  //         justifyContent: 'center',
+  //         alignItems: 'center',
+  //         backgroundColor: '#ccc',
+  //       }}
+  //     >
+  //       <Story />
+  //     </div>
+  //   )
+  // ],
 }
 
 export const White = {
