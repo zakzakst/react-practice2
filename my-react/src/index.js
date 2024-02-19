@@ -9,7 +9,8 @@ import reportWebVitals from './reportWebVitals'
 // import HookEffect from './chap07/HookEffect'
 // import HookRef from './chap07/HookRef'
 // import HookRefForward from './chap07/HookRefForward'
-import HookCallbackRef from './chap07/HookCallbackRef'
+// import HookCallbackRef from './chap07/HookCallbackRef'
+import HookReducer from './chap07/HookReducer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -40,8 +41,12 @@ root.render(
 //   <HookRefForward />
 // )
 
+// root.render(
+//   <HookCallbackRef />
+// )
+
 root.render(
-  <HookCallbackRef />
+  <HookReducer init={0} />
 )
 
 // #endregion
