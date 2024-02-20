@@ -8,7 +8,10 @@ const routesBasic = createBrowserRouter(
     { path: '/', element: <TopPage /> },
     { path: '/article', element: <ArticlePage /> },
     { path: '/about', element: <AboutPage /> },
-  ]
+  ],
+  {
+    basename: '/myapp',
+  }
   // createRoutesFromElements(
   //   <>
   //     <Route path='/' element={<TopPage />} />
