@@ -23,7 +23,8 @@ import reportWebVitals from './reportWebVitals'
 // import HookMemo from './chap07/HookMemo'
 // import HookTransition from './chap07/HookTransition'
 // import HookDeferred from './chap07/HookDeferred'
-import HookDeferredTransition from './chap07/HookDeferredTransition'
+// import HookDeferredTransition from './chap07/HookDeferredTransition'
+import HookCustom from './chap07/HookCustom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -110,8 +111,12 @@ root.render(
 //   <HookDeferred />
 // )
 
+// root.render(
+//   <HookDeferredTransition />
+// )
+
 root.render(
-  <HookDeferredTransition />
+  <HookCustom />
 )
 
 // #endregion
