@@ -21,7 +21,9 @@ import reportWebVitals from './reportWebVitals'
 // import RecoilTodo from './chap07/RecoilTodo'
 // import RecoilTodoUp from './chap07/RecoilTodoUp'
 // import HookMemo from './chap07/HookMemo'
-import HookTransition from './chap07/HookTransition'
+// import HookTransition from './chap07/HookTransition'
+// import HookDeferred from './chap07/HookDeferred'
+import HookDeferredTransition from './chap07/HookDeferredTransition'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -100,8 +102,16 @@ root.render(
 //   <HookMemo />
 // )
 
+// root.render(
+//   <HookTransition />
+// )
+
+// root.render(
+//   <HookDeferred />
+// )
+
 root.render(
-  <HookTransition />
+  <HookDeferredTransition />
 )
 
 // #endregion
