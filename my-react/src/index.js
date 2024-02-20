@@ -16,10 +16,11 @@ import reportWebVitals from './reportWebVitals'
 // import HookContext from './chap07/HookContext'
 // import MyThemeProvider from './chap07/MyThemeProvider'
 // import HookThemeButton from './chap07/HookThemeButton'
-import { RecoilRoot } from 'recoil'
+// import { RecoilRoot } from 'recoil'
 // import RecoilCounter from './chap07/RecoilCounter'
 // import RecoilTodo from './chap07/RecoilTodo'
-import RecoilTodoUp from './chap07/RecoilTodoUp'
+// import RecoilTodoUp from './chap07/RecoilTodoUp'
+import HookMemo from './chap07/HookMemo'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -88,10 +89,14 @@ root.render(
 //   </RecoilRoot>
 // )
 
+// root.render(
+//   <RecoilRoot>
+//     <RecoilTodoUp />
+//   </RecoilRoot>
+// )
+
 root.render(
-  <RecoilRoot>
-    <RecoilTodoUp />
-  </RecoilRoot>
+  <HookMemo />
 )
 
 // #endregion
