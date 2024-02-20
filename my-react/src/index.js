@@ -17,7 +17,8 @@ import reportWebVitals from './reportWebVitals'
 // import MyThemeProvider from './chap07/MyThemeProvider'
 // import HookThemeButton from './chap07/HookThemeButton'
 import { RecoilRoot } from 'recoil'
-import RecoilCounter from './chap07/RecoilCounter'
+// import RecoilCounter from './chap07/RecoilCounter'
+import RecoilTodo from './chap07/RecoilTodo'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -74,9 +75,15 @@ root.render(
 //   </MyThemeProvider>
 // )
 
+// root.render(
+//   <RecoilRoot>
+//     <RecoilCounter />
+//   </RecoilRoot>
+// )
+
 root.render(
   <RecoilRoot>
-    <RecoilCounter />
+    <RecoilTodo />
   </RecoilRoot>
 )
 
