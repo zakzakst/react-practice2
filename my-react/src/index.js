@@ -13,9 +13,11 @@ import reportWebVitals from './reportWebVitals'
 // import HookReducer from './chap07/HookReducer'
 // import HookReducerUp from './chap07/HookReducerUp'
 // import HookReducerInit from './chap07/HookReducerInit'
-import HookContext from './chap07/HookContext'
-import MyThemeProvider from './chap07/MyThemeProvider'
-import HookThemeButton from './chap07/HookThemeButton'
+// import HookContext from './chap07/HookContext'
+// import MyThemeProvider from './chap07/MyThemeProvider'
+// import HookThemeButton from './chap07/HookThemeButton'
+import { RecoilRoot } from 'recoil'
+import RecoilCounter from './chap07/RecoilCounter'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -66,10 +68,16 @@ root.render(
 //   <HookContext />
 // )
 
+// root.render(
+//   <MyThemeProvider>
+//     <HookThemeButton />
+//   </MyThemeProvider>
+// )
+
 root.render(
-  <MyThemeProvider>
-    <HookThemeButton />
-  </MyThemeProvider>
+  <RecoilRoot>
+    <RecoilCounter />
+  </RecoilRoot>
 )
 
 // #endregion
