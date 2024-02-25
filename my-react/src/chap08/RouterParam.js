@@ -1,9 +1,13 @@
+import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import './RouterNav.css'
 
 export default function RouterParam() {
+  const [count, setCount] = useState(0)
+
   return (
     <>
+      <p>アクセス数：{count}</p>
       <ul>
         <li><NavLink to=''>トップ</NavLink></li>
         <li><NavLink to='/book/978-4-8156-1336-5'>これからはじめるVue.js 3実践入門</NavLink></li>
@@ -15,7 +19,7 @@ export default function RouterParam() {
         <li><NavLink to='/nothing/foo/bar'>存在しないページ</NavLink></li>
       </ul>
       <hr />
-      <Outlet />
+      <Outlet context={[count, setCount]} />
     </>
   )
 }
