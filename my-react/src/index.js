@@ -5,7 +5,8 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 import { RouterProvider } from 'react-router-dom'
-import routesBasic from './chap08/routesBasic'
+// import routesBasic from './chap08/routesBasic'
+import routesLink from './chap08/routesLink'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -16,8 +17,12 @@ root.render(
 
 // #region ■■ 8-1 ■■
 
+// root.render(
+//   <RouterProvider router={routesBasic} />
+// )
+
 root.render(
-  <RouterProvider router={routesBasic} />
+  <RouterProvider router={routesLink} />
 )
 
 // #endregion
