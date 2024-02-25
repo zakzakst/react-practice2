@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals'
 
 import { RouterProvider } from 'react-router-dom'
 // import routesBasic from './chap08/routesBasic'
-import routesLink from './chap08/routesLink'
+// import routesLink from './chap08/routesLink'
+import routesParam from './chap08/routesParam'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -21,8 +22,12 @@ root.render(
 //   <RouterProvider router={routesBasic} />
 // )
 
+// root.render(
+//   <RouterProvider router={routesLink} />
+// )
+
 root.render(
-  <RouterProvider router={routesLink} />
+  <RouterProvider router={routesParam} />
 )
 
 // #endregion
