@@ -28,15 +28,21 @@ root.render(
 //   <RouterProvider router={routesLink} />
 // )
 
-root.render(
-  <RouterProvider router={routesParam} />
-)
+// root.render(
+//   <RouterProvider router={routesParam} />
+// )
 
 // root.render(
 //   <HelmetProvider>
 //     <RouterProvider router={routesHandle} />
 //   </HelmetProvider>
 // )
+
+root.render(
+  <HelmetProvider>
+    <RouterProvider router={routesParam} />
+  </HelmetProvider>
+)
 
 // #endregion
 
