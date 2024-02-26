@@ -10,6 +10,7 @@ import { RouterProvider } from 'react-router-dom'
 import routesParam from './chap08/routesParam'
 import { HelmetProvider } from 'react-helmet-async'
 import routesHandle from './chap08/routesHandle'
+import routesMyLink from './chap08/routesMyLink'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -38,9 +39,15 @@ root.render(
 //   </HelmetProvider>
 // )
 
+// root.render(
+//   <HelmetProvider>
+//     <RouterProvider router={routesParam} />
+//   </HelmetProvider>
+// )
+
 root.render(
   <HelmetProvider>
-    <RouterProvider router={routesParam} />
+    <RouterProvider router={routesMyLink} />
   </HelmetProvider>
 )
 
