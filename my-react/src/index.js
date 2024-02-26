@@ -10,6 +10,8 @@ import { RouterProvider } from 'react-router-dom'
 import routesParam from './chap08/routesParam'
 import { HelmetProvider } from 'react-helmet-async'
 import routesHandle from './chap08/routesHandle'
+import routesMyLink from './chap08/routesMyLink'
+import routesScroll from './chap08/routesScroll'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -38,10 +40,20 @@ root.render(
 //   </HelmetProvider>
 // )
 
+// root.render(
+//   <HelmetProvider>
+//     <RouterProvider router={routesParam} />
+//   </HelmetProvider>
+// )
+
+// root.render(
+//   <HelmetProvider>
+//     <RouterProvider router={routesMyLink} />
+//   </HelmetProvider>
+// )
+
 root.render(
-  <HelmetProvider>
-    <RouterProvider router={routesParam} />
-  </HelmetProvider>
+  <RouterProvider router={routesScroll} />
 )
 
 // #endregion
