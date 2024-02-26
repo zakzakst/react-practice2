@@ -70,6 +70,21 @@ const routesParam = createBrowserRouter(
     >
       <Route path='/' element={<TopPage />} />
       <Route
+        path='/books'
+        lazy={async () => {
+          const { BookListPage } = await import('./BookNest')
+          return { Component: BookListPage }
+        }}
+      >
+        <Route
+          path=':isbn'
+          lazy={async () => {
+            const { BookDetailsPage } = await import('./BookNest')
+            return { Component: BookDetailsPage }
+          }}
+        />
+      </Route>
+      <Route
         path='/book/form'
         element={<BookFormPage />}
         action={bookAction}
