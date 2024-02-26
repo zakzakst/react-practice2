@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals'
 import { RouterProvider } from 'react-router-dom'
 // import routesBasic from './chap08/routesBasic'
 // import routesLink from './chap08/routesLink'
-// import routesParam from './chap08/routesParam'
+import routesParam from './chap08/routesParam'
 import { HelmetProvider } from 'react-helmet-async'
 import routesHandle from './chap08/routesHandle'
 
@@ -32,9 +32,15 @@ root.render(
 //   <RouterProvider router={routesParam} />
 // )
 
+// root.render(
+//   <HelmetProvider>
+//     <RouterProvider router={routesHandle} />
+//   </HelmetProvider>
+// )
+
 root.render(
   <HelmetProvider>
-    <RouterProvider router={routesHandle} />
+    <RouterProvider router={routesParam} />
   </HelmetProvider>
 )
 
