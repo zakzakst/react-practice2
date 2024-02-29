@@ -32,6 +32,6 @@ export default function QueryPre() {
   }
 
   return (
-    <p>{ JSON.stringify(data) }</p>
+    <p role='paragraph'>{ JSON.stringify(data) }</p>
   )
 }
