@@ -24,11 +24,11 @@ export default function QueryPre() {
   }, [])
 
   if (isLoading) {
-    return <p>Loading...</p>
+    return <p role='paragraph'>Loading...</p>
   }
 
   if (error) {
-    return <p>Error: {error}</p>
+    return <p role='paragraph'>Error: {error}</p>
   }
 
   return (
